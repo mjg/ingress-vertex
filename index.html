@@ -21,11 +21,11 @@ function Init()
     S=new Scene3D(SVGObjects[0],0,500,500);
   }
   else S=new Scene3D(document.getElementById("Scene1"),1);
-  T=new Tetrahedron(S, "#0080ff", "#0000ff", "#000000", 1);
+  T=new Tetrahedron(S, "", "", "#ffffff", 3);
   T.Zoom(0.8);
   T.SetId(0);
   T.SetEventAction("click", parent.ClickMsg);
-  C=new Cube(S, "#0080ff", "#0000ff", "#000000", 1);
+  C=new Cube(S, "", "", "#ffffff", 3);
   C.SetId(2);
   C.SetEventAction("click", parent.ClickMsg);
   S.AutoCenter();
