@@ -22,19 +22,17 @@ function Init()
   }
   else S=new Scene3D(document.getElementById("Scene1"),1);
   T=new Tetrahedron(S, "#0080ff", "#0000ff", "#000000", 1);
-  T.Shift(1,1,1);
+  T.Zoom(0.8);
   T.SetId(0);
   T.SetEventAction("click", parent.ClickMsg);
   C=new Cube(S, "#0080ff", "#0000ff", "#000000", 1);
-  C.Zoom(0.9);
-  C.Shift(1,-1,-1);
   C.SetId(2);
   C.SetEventAction("click", parent.ClickMsg);
   S.AutoCenter();
   S.Center.Zoom(0.0);
-  S.ZoomAll*=1.4;
-  S.ChangeViewer(-15,0);
+  S.ChangeViewer(-35.264,45);
   S.ChangeLight(-20,-30);
+  S.Dist *= 10;
   S.Sort();
   S.Draw();
 }
@@ -65,7 +63,7 @@ function ChangeLight(ttheta, ffi)
 }
 var viewerzoomed=0;
 function ZoomViewer(vv)
-{ if ((viewerzoomed+vv>5)||(viewerzoomed+vv<-5)) return;
+{ if ((viewerzoomed+vv>10)||(viewerzoomed+vv<-10)) return;
   viewerzoomed+=vv;
   if (vv>0) S.Dist*=0.8;
   else S.Dist/=0.8;
