@@ -18,7 +18,7 @@ function Init()
     { setTimeout("Init()",100);
       return;
     }
-    S=new Scene3D(SVGObjects[0],0,500,500);
+    S=new Scene3D(SVGObjects[0],0,800,400);
   }
   else S=new Scene3D(document.getElementById("Scene1"),1);
   T=new Tetrahedron(S, "", "", "#ffffff", 3);
@@ -117,8 +117,8 @@ onload=Init;
 <input type="button" id="StartStop" onClick="StartStop()" value="rotate" style="width:80" />
 <table noborder bgcolor=#00aeef><tr><td>
 <script language="JavaScript">
-if (useSVG) document.writeln("<embed width='500' height='500' name='Scene1' src='scene.svg' wmode='transparent' type='image/svg+xml' />");
-else document.writeln("<div id='Scene1' style='position: relative; width:500; height:500; overflow: hidden;'></div>");
+if (useSVG) document.writeln("<embed width='800' height='400' name='Scene1' src='scene.svg' wmode='transparent' type='image/svg+xml' />");
+else document.writeln("<div id='Scene1' style='position: relative; width:800; height:800; overflow: hidden;'></div>");
 </script>
 </td></tr></table>
 </body>
