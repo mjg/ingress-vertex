@@ -37,6 +37,8 @@ function Init()
   TTT.RotateZ(180,0);
   TTT.RotateY(-35.2644,0);
   TTT.RotateZ(-45, 0);
+  b = 0.35355; // sqrt(2)/4
+  TTT.Shift(b, -b, b);
   TTT.Zoom(0.8);
   TTT.Shift(1,1,0);
   CC=new Cube(S, "", "", "#ffffff", 3);
