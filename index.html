@@ -32,6 +32,11 @@ function Init()
   TT.Zoom(0.8);
   TT.Shift(1,1,0);
   TTT=new Tetrahedron(S, "", "", "#ffffff", 3);
+  TTT.RotateZ(45, 0);
+  TTT.RotateY(35.2644,0); // 90 - atan(sqrt(2))
+  TTT.RotateZ(180,0);
+  TTT.RotateY(-35.2644,0);
+  TTT.RotateZ(-45, 0);
   TTT.Zoom(0.8);
   TTT.Shift(1,1,0);
   CC=new Cube(S, "", "", "#ffffff", 3);
