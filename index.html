@@ -21,17 +21,17 @@ function Init()
     S=new Scene3D(SVGObjects[0],0,600,400);
   }
   else S=new Scene3D(document.getElementById("Scene1"),1);
-  T=new Tetrahedron(S, "", "", "#ffffff", 3);
+  T=new Tetrahedron(S, "#00aeef", "#00aeef", "#ffffff", 3);
   T.Zoom(0.8);
   T.Shift(-1,-1,0);
   T.SetId(0);
   C=new Cube(S, "", "", "#ffffff", 3);
   C.Shift(-1,-1,0);
   C.SetId(2);
-  TT=new Tetrahedron(S, "", "", "#ffffff", 3);
+  TT=new Tetrahedron(S, "#00aeef", "#00aeef", "#ffffff", 3);
   TT.Zoom(0.8);
   TT.Shift(1,1,0);
-  TTT=new Tetrahedron(S, "", "", "#ffffff", 3);
+  TTT=new Tetrahedron(S, "#00aeef", "#00aeef", "#ffffff", 3);
   TTT.RotateZ(45, 0);
   TTT.RotateY(35.2644,0); // 90 - atan(sqrt(2))
   TTT.RotateZ(180,0);
